@@ -4,7 +4,7 @@ rm -rf grading-area
 
 
 mkdir grading-area
-# clpning the data
+# cloning the data
 git clone $1 student-submission 
 if [[ $? -gt 0 ]]
 then
@@ -29,7 +29,8 @@ cp TestListExamples.java grading-area
 cp -r lib grading-area
 
 # runing javac 
-cd gradind-area
+cd grading-area
+javac ListExamples.java 
 
 # Draw a picture/take notes on the directory structure that's set up after
 # getting to this point
